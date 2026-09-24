@@ -1,0 +1,40 @@
+{
+  "intervalMs": 4200,
+  "cta": {
+    "href": "/#contact",
+    "label": "Talk to us"
+  },
+  "clientsLabel": "Trusted by teams at",
+  "clients": [
+    {
+      "name": "Northline"
+    },
+    {
+      "name": "Beacon"
+    },
+    {
+      "name": "Orbit Labs"
+    },
+    {
+      "name": "Helix"
+    },
+    {
+      "name": "Copper"
+    },
+    {
+      "name": "Folio"
+    },
+    {
+      "name": "Atlas"
+    },
+    {
+      "name": "Peak & Co"
+    }
+  ],
+  "titles": [
+    "Move your business\nto the modern\nAI world",
+    "We make your idea\nreal on the\ninternet",
+    "Your next idea,\nbuilt to live\nonline",
+    "AI-ready software\nyour team can\nactually run"
+  ]
+}

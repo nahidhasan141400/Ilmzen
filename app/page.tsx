@@ -1,10 +1,42 @@
+import type { Metadata } from "next";
+import { Cta } from "@/components/sections/cta";
+import { Hero } from "@/components/sections/hero";
+import { Services } from "@/components/sections/services";
+import { flattenTitle, getHeroContent } from "@/lib/hero";
+import { siteName } from "@/lib/site";
+
+export const dynamic = "force-static";
+export const revalidate = false;
+
+export function generateMetadata(): Metadata {
+  const hero = getHeroContent();
+  const primaryTitle = flattenTitle(hero.titles[0] ?? siteName);
+
+  return {
+    title: {
+      absolute: `${siteName} — ${primaryTitle}`,
+    },
+    description: primaryTitle,
+    keywords: hero.titles.map(flattenTitle),
+    openGraph: {
+      title: primaryTitle,
+      description: primaryTitle,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: primaryTitle,
+      description: primaryTitle,
+    },
+  };
+}
+
 export default function Home() {
   return (
-    <main className="flex min-h-full flex-col items-center justify-center px-6">
-      <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl">
-        Hello World
-      </h1>
-      <p className="mt-4 text-lg text-zinc-600">Easy Soft</p>
-    </main>
+    <>
+      <Hero />
+      <Services />
+      <Cta />
+    </>
   );
 }
