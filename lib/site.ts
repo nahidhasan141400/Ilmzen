@@ -1,4 +1,4 @@
-export const siteName = "Easy Soft";
+export const siteName = "Ilmzen";
 
 export const navLinks = [
   { href: "/", label: "Home" },

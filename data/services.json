@@ -1,7 +1,7 @@
 {
   "id": "services",
   "headline": "Build. Advise.\nIntegrate.",
-  "body": "Software for teams who need it to run — not just look finished.",
+  "body": "Software for teams who need it to run, not just look finished.",
   "cta": {
     "href": "/#contact",
     "label": "Talk about a project"
@@ -9,7 +9,7 @@
   "items": [
     {
       "title": "Software development",
-      "body": "Custom web apps, products, and internal tools — designed, built, and shipped with you from the first sketch to launch."
+      "body": "Custom web apps, products, and internal tools - designed, built, and shipped with you from the first sketch to launch."
     },
     {
       "title": "Software consultancy",
@@ -29,11 +29,11 @@
     },
     {
       "title": "Cloud management",
-      "body": "Cloud setup, cost, and operations so your product stays reliable as it grows — without the infrastructure becoming the work."
+      "body": "Cloud setup, cost, and operations so your product stays reliable as it grows, without the infrastructure becoming the work."
     },
     {
       "title": "Custom software solutions",
-      "body": "Bespoke systems for the way you actually work — not a generic template you have to fight."
+      "body": "Bespoke systems for the way you actually work, not a generic template you have to fight."
     }
   ]
 }

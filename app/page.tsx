@@ -14,7 +14,7 @@ export function generateMetadata(): Metadata {
 
   return {
     title: {
-      absolute: `${siteName} — ${primaryTitle}`,
+      absolute: `${siteName} - ${primaryTitle}`,
     },
     description: primaryTitle,
     keywords: hero.titles.map(flattenTitle),

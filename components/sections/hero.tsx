@@ -8,7 +8,7 @@ export function Hero() {
   const hero = getHeroContent();
 
   return (
-    <section className="relative isolate min-h-dvh overflow-hidden rounded-b-[2.25rem] bg-[#d7e2f4] text-slate-950 sm:rounded-b-[3rem] lg:rounded-b-[4rem]">
+    <section className="relative isolate min-h-dvh overflow-hidden rounded-b-[2.25rem] bg-white text-charcoal sm:rounded-b-[3rem] lg:rounded-b-[4rem]">
       <Image
         src="/images/hero-bg.jpg"
         alt=""
@@ -19,11 +19,11 @@ export function Hero() {
       />
       <HeroMedia />
       <div
-        className="absolute inset-0 bg-linear-to-r from-[#e7eef8]/85 via-[#e7eef8]/45 to-transparent"
+        className="absolute inset-0 bg-linear-to-r from-white/90 via-white/55 to-transparent"
         aria-hidden="true"
       />
       <div
-        className="absolute inset-0 bg-linear-to-t from-[#d7e2f4]/50 via-transparent to-black/5"
+        className="absolute inset-0 bg-linear-to-t from-white/45 via-transparent to-transparent"
         aria-hidden="true"
       />
 

@@ -52,16 +52,16 @@ export function Header() {
       <div className="relative z-10 flex h-20 w-full items-center justify-between px-5 sm:px-8 lg:px-10">
         <Link
           href="/"
-          className="inline-flex min-h-11 items-center gap-2.5 text-base font-semibold tracking-tight text-slate-950 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-950"
+          className="inline-flex min-h-11 items-center gap-2.5 text-base font-semibold tracking-tight text-charcoal cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal"
         >
           <Image
-            src="/images/easysoft-logo.png"
-            alt=""
-            width={28}
-            height={28}
-            className="h-7 w-7"
+            src="/images/ilmzen-logo.png"
+            alt={siteName}
+            width={2000}
+            height={479}
+            priority
+            className="h-7 w-auto sm:h-6"
           />
-          {siteName}
         </Link>
 
         <div className="flex items-center gap-3 sm:gap-6">
@@ -71,13 +71,13 @@ export function Header() {
 
           <Link
             href={hero.cta.href}
-            className="inline-flex min-h-11 items-center rounded-full bg-slate-950 px-5 text-sm font-medium text-white cursor-pointer transition-colors duration-200 hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-950"
+            className="inline-flex min-h-11 items-center rounded-full bg-charcoal px-5 text-sm font-medium text-white cursor-pointer transition-colors duration-200 hover:bg-charcoal/85 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal"
           >
             {hero.cta.label}
           </Link>
 
           <details className="group md:hidden">
-            <summary className="flex min-h-11 min-w-11 cursor-pointer list-none items-center justify-center text-slate-950 [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-950">
+            <summary className="flex min-h-11 min-w-11 cursor-pointer list-none items-center justify-center text-charcoal [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal">
               <span className="sr-only">Menu</span>
               <MenuIcon className="group-open:hidden" />
               <CloseIcon className="hidden group-open:block" />
@@ -85,7 +85,7 @@ export function Header() {
 
             <nav
               aria-label="Mobile"
-              className="absolute left-0 right-0 top-20 z-20 border-b border-slate-950/10 bg-white/80 backdrop-blur-xl"
+              className="absolute left-0 right-0 top-20 z-20 border-b border-cool bg-white/90 backdrop-blur-xl"
             >
               <NavList className="flex flex-col px-5 py-3 sm:px-8" />
             </nav>
@@ -104,7 +104,7 @@ function NavList({ className }: { className: string }) {
           <Link
             href={link.href}
             aria-current={link.href === "/" ? "page" : undefined}
-            className="inline-flex min-h-11 items-center text-sm font-medium text-slate-800 cursor-pointer transition-colors duration-200 hover:text-slate-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-950 md:px-3"
+            className="inline-flex min-h-11 items-center text-sm font-medium text-charcoal/80 cursor-pointer transition-colors duration-200 hover:text-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal md:px-3"
           >
             {link.label}
           </Link>

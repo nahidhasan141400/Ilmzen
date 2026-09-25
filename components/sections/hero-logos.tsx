@@ -44,7 +44,7 @@ function LogoSet({
     >
       {clients.map((client, index) => (
         <li key={`${client.name}-${clone ? "clone" : "live"}`}>
-          <span className="inline-flex items-center gap-2.5 text-slate-700">
+          <span className="inline-flex items-center gap-2.5 text-charcoal/75">
             <PlaceholderMark index={index} />
             <span className="text-[13px] font-semibold tracking-[0.14em] uppercase">
               {client.name}
@@ -67,7 +67,7 @@ export function HeroLogos({
 
   return (
     <div className="mt-8 max-w-xl sm:mt-9">
-      <p className="text-sm text-slate-600">{label}</p>
+      <p className="text-sm text-charcoal/65">{label}</p>
       <div className="logo-marquee mt-3" aria-label="Client logos">
         <div className="logo-track">
           <LogoSet clients={clients} />

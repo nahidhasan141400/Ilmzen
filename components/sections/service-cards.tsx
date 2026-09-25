@@ -76,23 +76,23 @@ export function ServiceCards({ items }: ServiceCardsProps) {
         return (
           <li
             key={item.title}
-            className="service-card-row relative overflow-hidden border-b border-slate-200 px-5 py-10 last:border-b-0 sm:px-8 sm:py-12 md:px-10 md:py-14 lg:px-12 lg:py-16"
+            className="service-card-row relative overflow-hidden border-b border-cool px-5 py-10 last:border-b-0 sm:px-8 sm:py-12 md:px-10 md:py-14 lg:px-12 lg:py-16"
           >
             <p
-              className="service-card-depth pointer-events-none absolute -right-1 top-2 hidden select-none text-[6.5rem] font-bold leading-none text-slate-950/4 will-change-transform md:block lg:text-[8rem]"
+              className="service-card-depth pointer-events-none absolute -right-1 top-2 hidden select-none text-[6.5rem] font-bold leading-none text-charcoal/5 will-change-transform md:block lg:text-[8rem]"
               aria-hidden="true"
             >
               {number}
             </p>
             <article className="service-card relative z-10 grid max-w-xl grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-3 sm:gap-x-6">
-              <p className="pt-1.5 text-sm font-medium tracking-[0.16em] text-slate-600">
+              <p className="pt-1.5 text-sm font-medium tracking-[0.16em] text-charcoal/65">
                 {number}
               </p>
               <div>
-                <h3 className="text-[1.65rem] font-semibold leading-[1.15] tracking-tight text-slate-950 sm:text-4xl lg:text-[2.5rem]">
+                <h3 className="text-[1.65rem] font-semibold leading-[1.15] tracking-tight text-charcoal sm:text-4xl lg:text-[2.5rem]">
                   {item.title}
                 </h3>
-                <p className="mt-4 max-w-md text-base leading-relaxed text-slate-600 sm:mt-5 sm:text-lg">
+                <p className="mt-4 max-w-md text-base leading-relaxed text-charcoal/65 sm:mt-5 sm:text-lg">
                   {item.body}
                 </p>
               </div>

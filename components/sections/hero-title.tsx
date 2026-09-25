@@ -62,7 +62,7 @@ export function HeroTitle({ titles, intervalMs }: HeroTitleProps) {
   return (
     <div ref={setRoot} className="max-w-4xl">
       <h1
-        className={`hero-title text-[2.15rem] font-bold leading-[1.12] tracking-tight text-slate-950 sm:text-6xl lg:text-[4.35rem] ${
+        className={`hero-title text-[2.15rem] font-bold leading-[1.12] tracking-tight text-charcoal sm:text-6xl lg:text-[4.35rem] ${
           animated && canRotate ? "is-animated" : ""
         }`}
       >

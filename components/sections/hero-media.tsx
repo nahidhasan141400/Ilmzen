@@ -89,7 +89,7 @@ export function HeroMedia() {
         onClick={togglePlayback}
         aria-pressed={playing}
         aria-label={playing ? "Pause background video" : "Play background video"}
-        className="absolute right-5 bottom-6 z-20 inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-full border border-slate-900/10 bg-white/70 text-slate-900 shadow-sm backdrop-blur-md transition-colors duration-200 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900 sm:right-8 sm:bottom-8"
+        className="absolute right-5 bottom-6 z-20 inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center rounded-full border border-cool bg-white/80 text-charcoal shadow-sm backdrop-blur-md transition-colors duration-200 hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal sm:right-8 sm:bottom-8"
       >
         {playing ? <PauseIcon /> : <PlayIcon />}
       </button>
