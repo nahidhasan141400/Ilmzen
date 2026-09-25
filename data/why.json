@@ -1,0 +1,25 @@
+{
+  "id": "about",
+  "headline": "Why ILMZEN?",
+  "lead": "We don't just build software.\nWe understand your business.",
+  "paragraphs": [
+    "At ILMZEN, we believe technology should work for your business, not the other way around.",
+    "We take the time to understand your business, challenges, and goals before designing digital solutions tailored to your needs.",
+    "Our mission is simple: reduce operational costs, increase profitability, and free up your time so you can focus on what truly matters — growing your business."
+  ],
+  "closing": "We don't just digitize your business. We make it work smarter.",
+  "benefits": [
+    {
+      "title": "Reduce Costs",
+      "body": "Eliminate repetitive tasks and unnecessary operational expenses through smart technology."
+    },
+    {
+      "title": "Increase Profits",
+      "body": "Streamline operations, improve efficiency, and create opportunities for sustainable growth."
+    },
+    {
+      "title": "Gain Freedom",
+      "body": "Spend less time managing daily operations and more time building the business and life you want."
+    }
+  ]
+}

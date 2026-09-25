@@ -11,6 +11,11 @@
 html {
   color-scheme: only light;
   scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 body {

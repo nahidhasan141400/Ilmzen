@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { MobileMenu } from "@/components/layout/mobile-menu";
 import { getHeroContent } from "@/lib/hero";
 import { navLinks, siteName } from "@/lib/site";
 
@@ -76,20 +77,7 @@ export function Header() {
             {hero.cta.label}
           </Link>
 
-          <details className="group md:hidden">
-            <summary className="flex min-h-11 min-w-11 cursor-pointer list-none items-center justify-center text-charcoal [&::-webkit-details-marker]:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal">
-              <span className="sr-only">Menu</span>
-              <MenuIcon className="group-open:hidden" />
-              <CloseIcon className="hidden group-open:block" />
-            </summary>
-
-            <nav
-              aria-label="Mobile"
-              className="absolute left-0 right-0 top-20 z-20 border-b border-cool bg-white/90 backdrop-blur-xl"
-            >
-              <NavList className="flex flex-col px-5 py-3 sm:px-8" />
-            </nav>
-          </details>
+          <MobileMenu email="hello@ilmzen.com" year={new Date().getFullYear()} />
         </div>
       </div>
     </header>
@@ -111,41 +99,5 @@ function NavList({ className }: { className: string }) {
         </li>
       ))}
     </ul>
-  );
-}
-
-function MenuIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      aria-hidden="true"
-    >
-      <path d="M4 7h16M4 12h16M4 17h16" />
-    </svg>
-  );
-}
-
-function CloseIcon({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      aria-hidden="true"
-    >
-      <path d="M6 6l12 12M18 6L6 18" />
-    </svg>
   );
 }
