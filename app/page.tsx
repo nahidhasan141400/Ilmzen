@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cta } from "@/components/sections/cta";
 import { Hero } from "@/components/sections/hero";
+import { Projects } from "@/components/sections/projects";
 import { Services } from "@/components/sections/services";
 import { Why } from "@/components/sections/why";
 import { flattenTitle, getHeroContent } from "@/lib/hero";
@@ -38,6 +39,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Why />
+      <Projects />
       <Cta />
     </>
   );

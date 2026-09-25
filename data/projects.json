@@ -1,0 +1,28 @@
+{
+  "id": "projects",
+  "headline": "Selected\nwork.",
+  "body": "Products we designed and built with the teams who run them.",
+  "items": [
+    {
+      "title": "Perfect Electro Lines",
+      "category": "Industrial",
+      "body": "A product site for power equipment — generators, UPS, substations, and the systems around them, built for desktop and phone.",
+      "image": "/images/perfect-electro.jpg",
+      "imageAlt": "Perfect Electro Lines on a laptop and phone: a product map of generators, UPS, substations, and related power equipment."
+    },
+    {
+      "title": "EduSync",
+      "category": "Education",
+      "body": "A campus platform for student records, fees, and the daily work of a school — from the staff dashboard to family sign-in.",
+      "image": "/images/edusync.jpg",
+      "imageAlt": "EduSync on a laptop and tablet: a school dashboard with student and balance totals beside a sign-in screen."
+    },
+    {
+      "title": "Astha Trip",
+      "category": "Travel",
+      "body": "Travel agents and service providers on one platform — tour packages, visa applications, guest documents, and the services around a trip.",
+      "image": "/images/asthatrip.jpg",
+      "imageAlt": "Astha Trip on a tablet and laptop: a dark travel platform with the headline Plan. Book. Travel."
+    }
+  ]
+}
