@@ -1,0 +1,23 @@
+{
+  "id": "process",
+  "headline": "How we\nwork.",
+  "body": "From the first chat to software your team can really use.",
+  "steps": [
+    {
+      "title": "Listen",
+      "body": "We sit with you and learn how the work happens today, what slows you down, and what you want to change."
+    },
+    {
+      "title": "Plan",
+      "body": "We agree on what to build before we start, so we do not have to redo the expensive parts later."
+    },
+    {
+      "title": "Build",
+      "body": "We design and build it with you. You see it working early, and we keep going until it is ready."
+    },
+    {
+      "title": "Stay",
+      "body": "We hand it over when people can use it. Then we stay close so it keeps working as you grow."
+    }
+  ]
+}
