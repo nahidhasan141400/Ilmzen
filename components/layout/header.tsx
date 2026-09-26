@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { MobileMenu } from "@/components/layout/mobile-menu";
+import { NavList } from "@/components/layout/nav-list";
 import { getHeroContent } from "@/lib/hero";
-import { navLinks, siteName } from "@/lib/site";
+import { siteName } from "@/lib/site";
 
 const headerBlurLayers = [
   {
@@ -81,23 +82,5 @@ export function Header() {
         </div>
       </div>
     </header>
-  );
-}
-
-function NavList({ className }: { className: string }) {
-  return (
-    <ul className={className}>
-      {navLinks.map((link) => (
-        <li key={link.href}>
-          <Link
-            href={link.href}
-            aria-current={link.href === "/" ? "page" : undefined}
-            className="inline-flex min-h-11 items-center text-sm font-medium text-charcoal/80 cursor-pointer transition-colors duration-200 hover:text-charcoal focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal md:px-3"
-          >
-            {link.label}
-          </Link>
-        </li>
-      ))}
-    </ul>
   );
 }

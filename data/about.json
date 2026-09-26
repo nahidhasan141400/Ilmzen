@@ -1,0 +1,30 @@
+{
+  "id": "about",
+  "eyebrow": "About",
+  "headline": "We learn the business\nbefore we build.",
+  "lead": "Ilmzen is a software company. We sit with how you work, then design the system that makes that work lighter.",
+  "paragraphs": [
+    "Technology should work for the business, not the other way around. We look at the repetitive tasks, the bottlenecks, and the places where time and money leak away.",
+    "From there we build software your team can actually run: lower operating cost, clearer day-to-day work, and more room to grow the part of the business only you can."
+  ],
+  "images": [
+    {
+      "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80",
+      "alt": "A team working together around a laptop",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "alt": "A long office hallway lined with shelves and glass rooms",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+      "alt": "People in a working session around a table",
+      "width": 1600,
+      "height": 1067
+    }
+  ]
+}

@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
-import { navLinks, siteName } from "@/lib/site";
+import { isNavCurrent, navLinks, siteName } from "@/lib/site";
 
 type MobileMenuProps = {
   email: string;
@@ -12,6 +13,7 @@ type MobileMenuProps = {
 export function MobileMenu({ email, year }: MobileMenuProps) {
   const [open, setOpen] = useState(false);
   const menuId = useId();
+  const pathname = usePathname();
 
   useEffect(() => {
     if (!open) return;
@@ -66,7 +68,9 @@ export function MobileMenu({ email, year }: MobileMenuProps) {
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  aria-current={link.href === "/" ? "page" : undefined}
+                  aria-current={
+                    isNavCurrent(link.href, pathname) ? "page" : undefined
+                  }
                   className="flex min-h-16 items-center text-3xl font-semibold tracking-tight text-charcoal cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-charcoal"
                 >
                   {link.label}
